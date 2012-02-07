@@ -187,6 +187,27 @@ li {
 }
 
 /* STEP SPECIFIC STYLES */
+#title {
+    padding: 0;
+}
+
+#title h1 {
+    font-size: 190px;
+    
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
+
+.tagline {
+    font-size: 20px;
+}
+
+.subheading {
+    font-size: 20px;
+}
 
 #we_will_see {
 	width: 1000px;
