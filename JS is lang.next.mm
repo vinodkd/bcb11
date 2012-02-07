@@ -103,7 +103,7 @@
 <node CREATED="1328555697021" ID="ID_1328915596" MODIFIED="1328555703758" TEXT="interwine history with this"/>
 <node CREATED="1328556007761" ID="ID_1109291694" MODIFIED="1328556037008" TEXT="show history as repeating itself by putting timeline on a circle that parallel&apos;s netscape&apos;s enterprise server"/>
 </node>
-<node CREATED="1328555800842" ID="ID_357839845" MODIFIED="1328555803072" TEXT="assets">
+<node CREATED="1328555800842" ID="ID_357839845" MODIFIED="1328605186155" TEXT="assets required">
 <node CREATED="1328556290828" ID="ID_1106781777" MODIFIED="1328556299341" TEXT="lafore&apos;s book&apos;s cover"/>
 <node CREATED="1328555803073" ID="ID_60093080" MODIFIED="1328555807812" TEXT="quote for atwoods law"/>
 <node CREATED="1328555808474" ID="ID_1234546059" MODIFIED="1328555815570" TEXT="pic from crockford&apos;s book"/>

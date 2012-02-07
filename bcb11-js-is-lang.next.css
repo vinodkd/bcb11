@@ -109,13 +109,15 @@ a:hover {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
+    font-family: Verdana, 'PT Serif', georgia, serif;
 
     font-size: 48px;
     line-height: 1.5;
     text-align:center;
     text-valign:center;
+
 }
+
 
 /* fade out inactive slides */
 
@@ -131,7 +133,16 @@ a:hover {
     opacity: 0.3;
 }
 
+.list {
+    text-align:left;
+    text-valign:top;
+}
+
 /* STEP SPECIFIC STYLES */
+
+#we_will_see {
+	width: 1000px;
+}
 
 /* hint on the first slide */
 
@@ -183,9 +194,15 @@ a:hover {
 
 .smallquote {
 	font-size: 20px;
+	text-align:justify;
 }
-/* impress.js title */
 
+ul li {
+	font-size: 20px;
+	text-align: center;
+}
+
+/* impress.js title */
 #title {
     padding: 0;
 }
