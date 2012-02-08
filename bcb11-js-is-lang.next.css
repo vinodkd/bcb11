@@ -88,6 +88,16 @@ a:hover {
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
 
+
+ul{
+	text-align: center;
+	list-style-type: square;
+} 
+li {
+	font-size: 20px;
+	text-align: left;
+}
+
 /* COMMON STEP STYLES */
 
 .step {
@@ -176,14 +186,6 @@ a:hover {
 .smallquote {
 	font-size: 20px;
 	text-align:justify;
-}
-
-ul{
-	text-align: center;
-} 
-li {
-	font-size: 20px;
-	text-align: left;
 }
 
 /* STEP SPECIFIC STYLES */
