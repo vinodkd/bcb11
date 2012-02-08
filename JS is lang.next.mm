@@ -77,11 +77,11 @@
 <node CREATED="1327628910032" ID="ID_278451737" MODIFIED="1327628911865" TEXT="jslinux"/>
 </node>
 <node CREATED="1327427950782" ID="ID_1645517112" MODIFIED="1327427954246" TEXT="use impress.js"/>
-<node CREATED="1327778583651" ID="ID_570084695" LINK="http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html" MODIFIED="1327778638852" TEXT="1995 - Brendan Eich reads up on every mistake ever made in designing a programming language, invents a few more, and creates LiveScript. Later, in an effort to cash in on the popularity of Java the language is renamed JavaScript. Later still, in an effort to cash in on the popularity of skin diseases the language is renamed ECMAScript."/>
+<node CREATED="1327778583651" ID="ID_570084695" LINK="http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html" MODIFIED="1328607145474" TEXT="1995 - Brendan Eich reads up on every mistake ever made in designing a programming language, invents a few more, and creates LiveScript. Later, in an effort to cash in on the popularity of Java the language is renamed JavaScript. Later still, in an effort to cash in on the popularity of skin diseases the language is renamed ECMAScript."/>
 <node CREATED="1328555754738" ID="ID_975764319" MODIFIED="1328555797527" TEXT="sequence">
 <node CREATED="1328555654318" ID="ID_1471562834" MODIFIED="1328555672967" TEXT="ask what fav langs are"/>
 <node CREATED="1328555673294" ID="ID_1623999129" MODIFIED="1328555678374" TEXT="ask what next one will be"/>
-<node CREATED="1328556079137" ID="ID_617391244" MODIFIED="1328625672615" TEXT="my story">
+<node CREATED="1328556079137" ID="ID_617391244" MODIFIED="1328556083567" TEXT="my story">
 <node CREATED="1328556083568" ID="ID_791634924" MODIFIED="1328556087578" TEXT="c++ via lafore"/>
 <node CREATED="1328556087840" ID="ID_551715446" MODIFIED="1328556089738" TEXT="graphics"/>
 <node CREATED="1328556090001" ID="ID_107941376" MODIFIED="1328556096415" TEXT="600 mfc classes">
@@ -103,7 +103,7 @@
 <node CREATED="1328555697021" ID="ID_1328915596" MODIFIED="1328555703758" TEXT="interwine history with this"/>
 <node CREATED="1328556007761" ID="ID_1109291694" MODIFIED="1328556037008" TEXT="show history as repeating itself by putting timeline on a circle that parallel&apos;s netscape&apos;s enterprise server"/>
 </node>
-<node CREATED="1328555800842" ID="ID_357839845" MODIFIED="1328555803072" TEXT="assets">
+<node CREATED="1328555800842" ID="ID_357839845" MODIFIED="1328605186155" TEXT="assets required">
 <node CREATED="1328556290828" ID="ID_1106781777" MODIFIED="1328556299341" TEXT="lafore&apos;s book&apos;s cover"/>
 <node CREATED="1328555803073" ID="ID_60093080" MODIFIED="1328555807812" TEXT="quote for atwoods law"/>
 <node CREATED="1328555808474" ID="ID_1234546059" MODIFIED="1328555815570" TEXT="pic from crockford&apos;s book"/>
@@ -114,7 +114,7 @@
 <node CREATED="1327628471031" ID="ID_1207335096" MODIFIED="1327628491838" TEXT="Dynamic typing with optional static types"/>
 <node CREATED="1327628492176" ID="ID_947706700" MODIFIED="1327628499453" TEXT="Performance"/>
 <node CREATED="1327628499764" ID="ID_1852100491" MODIFIED="1327628505976" TEXT="Tools"/>
-<node CREATED="1327628506390" ID="ID_936576683" MODIFIED="1327778908558" TEXT="Kitchen Sink">
+<node CREATED="1327628506390" ID="ID_936576683" MODIFIED="1328683872962" TEXT="Kitchen Sink">
 <node CREATED="1327628523250" ID="ID_122911652" MODIFIED="1327628532356" TEXT="Object literal syntax for arrays and hashes"/>
 <node CREATED="1327628532695" ID="ID_538140334" MODIFIED="1327628551790" TEXT="Array slicing and other collection operations"/>
 <node CREATED="1327628552049" ID="ID_1136537628" MODIFIED="1327628560389" TEXT="PCRE literals"/>
