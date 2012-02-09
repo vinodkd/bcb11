@@ -1,4 +1,4 @@
 .redcar
 *.xlsx
 .DS_*
-
+*.swp
