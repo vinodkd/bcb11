@@ -218,11 +218,11 @@ li {
   width: 1000px;
 }
 
-#testdiv {
+#easel {
 	position: absolute;
 	width: 1100px;
-	height: 2000px;
-	background: rgba(255,0,0,0.5);
+	height: 1100px;
+	background: rgba(0,50,128,0.5);
 
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style   : preserve-3d;
