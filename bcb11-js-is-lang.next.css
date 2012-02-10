@@ -56,13 +56,12 @@ body {
     min-height: 740px;
 
     background: rgb(176, 224, 230);
-/*
-	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    
+	  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-*/
     -webkit-font-smoothing: antialiased;
 }
 
@@ -196,7 +195,7 @@ li {
 	width:10%;
 }
 
-.lline {
+pre, .lline {
     text-align:left;
     text-valign:top;
 	font-size:20px;
@@ -205,6 +204,12 @@ li {
 .yes{
 	color:green;
 }
+
+.no{
+	color:red;
+}
+
+
 /* a left aligned step*/
 .lstep {
     text-align:left;
@@ -241,6 +246,11 @@ li {
 
 #we_will_see {
 	width: 1000px;
+}
+
+.mfc_horror{
+  background-image:url('img/mfc_class_dia.png');
+  background-repeat:no-repeat;
 }
 
 #me_wants > span{
