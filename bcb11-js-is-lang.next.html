@@ -163,8 +163,8 @@
 			<li>Popular; maybe some hype too :)</li>
 			<li>Nice, ie OO-ish, but with some functional bits</li>
 			<li>Scalable</li>
-			<li>Tools</li>
-			<li>Ecosystem</li>
+			<li>Nice Tools</li>
+			<li>Great Ecosystem</li>
 		</ul>
 	</div>
 
@@ -173,14 +173,33 @@
 		Here we go!
 	</div>
 
-	<div id="hist1" class="step" data-x="-1000" data-y="-2500" data-rotate="-90" data-scale="2">
-		netscape, brendan eich, livescript
+	<div id="1995" class="step hist" data-x="-2000" data-y="-2500" data-rotate="-90" data-scale="2">
+		<p>1995</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+						<div class="lline">Brendan Eich creates Mocha aka Livescript @ Netscape</div>
+						<div class="lline">Interestingly, this is both client <strong>and</strong> server side JS (Netscape Enterprise Server)</div>
+						<div class="lline">Its renamed Javascript to cash in on Java's hype</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline">Tools</div>
+						<div class="lline">Ecosystem</div>
+					</div>
+				</div>
+			</div>
 	</div>
 
-	<div id="hist2" class="step" data-x="-866" data-y="-2000" data-rotate="-90" data-scale="2">
-		client side
-		and server side too!
-		non standard
+	<div id="browser_wars" class="step" data-x="-1366" data-y="-2000" data-rotate="-90" data-scale="2">
+		<p>The Great Browser Wars of early 20th Century</p>
+		<div class="subheading">Javascript, JScript, Ecmascript</div>
+		<pre><code>
+			example of eventhandler code 
+			in an onclick attribute here
+		</code></pre>
 	</div>
 
 	<div id="hist3" class="step" data-x="-500" data-y="-1634" data-rotate="-90" data-scale="2">
@@ -238,9 +257,10 @@
 		blah
 	</div>
 
+<!--
 	<div id="histcheck" class="step" data-x="3500" data-y="-2500" data-rotate="-90" data-scale="10">
 	</div>
-
+-->
 
 	<div id="thankyou" class="step" data-x="6000" data-y="0" data-z="8000" data-rotate="-90">
 		<p style="text-align:center">Thank You!</p>
@@ -248,6 +268,9 @@
 
 	<div id="any_qs" class="step" data-x="6000" data-y="0" data-z="15000" data-rotate="-90">
 		<p style="text-align:center">Any Questions?</p>
+    </div>
+
+	<div id="wait_for_it" class="step" data-x="6000" data-y="0" data-z="30000" data-rotate="-90">
     </div>
 
 	<div id="vinod_coords" class="step" data-x="8000" data-y="0" data-z="40000" data-rotate="-90">
@@ -300,7 +323,7 @@
 		//ctx.bezierCurveTo(90,90,105,90,110,85);
 		//ctx.lineTo(110,15);
 	    ctx.closePath();  
-		ctx.stroke();
+		ctx.fill();
 	}
 
 	function draw() {  

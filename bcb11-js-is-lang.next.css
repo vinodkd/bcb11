@@ -55,13 +55,14 @@ body {
     
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: rgb(176, 224, 230);
+/*
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-
+*/
     -webkit-font-smoothing: antialiased;
 }
 
@@ -175,6 +176,34 @@ li {
   -o-transform:      rotate(-10deg);
   transform:         rotate(-10deg);
 
+}
+
+.table {
+	display:table;
+}
+.row{
+	display:table-row;
+}
+.col1 {
+	display:table-cell;
+	width:85%;
+}
+
+.col2 {
+	display:table-cell;
+	text-align:right;
+	padding: 4%;
+	width:10%;
+}
+
+.lline {
+    text-align:left;
+    text-valign:top;
+	font-size:20px;
+}
+
+.yes{
+	color:green;
 }
 /* a left aligned step*/
 .lstep {
