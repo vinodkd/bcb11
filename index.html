@@ -1,88 +1,661 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
+    <meta charset="utf-8" />
+    <title>Javascript is lang.next | Vinod Dinakaran @vinod_dinakaran</title>
+    
+    <meta name="description" content=".. where I argue that Javascript is the next big programming language. Created for Barcamp Bangalore 11 using impress.js">
+    <meta name="author" content="Vinod Dinakaran" />
 
-  <title>vinodkd/bcb11 @ GitHub</title>
+    <script type="text/javascript" src="sh_main.min.js"></script>
+    <script type="text/javascript" src="sh_javascript.min.js"></script>
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #4a6792;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #b5986d; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #b5986d; }
-    h3 { text-align: center; color: #b5986d; }
-    a { color: #b5986d; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+<!--    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
+    <link href="bcb11-js-is-lang.next.css" rel="stylesheet" />
+    <link type="text/css" href="sh_darkblue.min.css" rel="stylesheet" />
 </head>
+<body onload="doInit();">
+<div id="impress" class="impress-not-supported">
 
-<body>
-  <a href="https://github.com/vinodkd/bcb11"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/vinodkd/bcb11/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/vinodkd/bcb11/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
     </div>
 
-    <h1><a href="https://github.com/vinodkd/bcb11">bcb11</a>
-      <span class="small">by <a href="https://github.com/vinodkd">vinodkd</a></span></h1>
-
-    <div class="description">
-      presentation for barcamp bangalore -11
+    <div id="title" class="step" data-scale="10">
+      <p class="title"><span class="struckthru">Java</span>lang.next = Javascript</p>
+      <p class="tagline">... aka Javascript is the <strong>N</strong>ext <strong>B</strong>ig <strong>L</strong>anguage &trade;</p>
+      <p class="subheading"> Barcamp Bangalore, Feb 2012</p>
     </div>
 
-    
+    <div id="really" class="step" data-x="2500" data-y="250">
+      <p>Really?</p>
+	</div>
 
-    
-
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>vinodkd (vinod@vinodkd.org)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p> (vinod@vinodkd.org)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/vinodkd/bcb11/zipball/master">zip</a> or
-      <a href="https://github.com/vinodkd/bcb11/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/vinodkd/bcb11</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/vinodkd/bcb11">vinodkd/bcb11</a>
+    <div id="we_will_see" class="step" data-x="3200" data-y="250">
+	   <div class="smallquote">
+      "1995 - Brendan Eich reads up on every mistake ever made in designing a programming language, invents a few more, and creates LiveScript. <br/>
+      <br/>
+			Later, in an effort to cash in on the popularity of Java the language is renamed JavaScript. <br/>
+      <br/>
+			Later still, in an effort to cash in on the popularity of skin diseases the language is renamed ECMAScript."<br/>
+      <br/>
+			- James Iry in <a href="http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html">"A brief, incomplete and mostly wrong history of programming languages"</a>
+	   </div>
+	   <p>...so we'll see</p>
     </div>
 
+    <div id="me" class="step" data-x="4000" data-y="500" data-scale="3">
+      <p>1 dev</p>
+      <span class="smallquote"> (me) </span>
+    </div>
+
+    <div id="gw_basic" class="step list" data-x="4000" data-y="-100" data-rotate-z="-85">
+      <span>gw basic and </span><img src="img/norton_x86.jpg"><span> x86 assembly</span>
+    </div>
+    
+    <div id="pascal" class="step list" data-x="4200" data-y="150" data-rotate-z="-65">
+      <p>Pascal</p>
+    </div>
+
+    <div id="cpp_lafore" class="step list" data-x="4350" data-y="-150" data-rotate-z="-65">
+      <div>C++ </div>
+      <img src='img/rlafore_cpp.jpg'/>
+      <div>with Lafore </div>
+      
+    </div>
+    
+    <div id="mfc_horror"  class="step list mfc_horror" data-x="4600" data-y="100" data-rotate-z="-45">
+      <p>...cured by mfc's 600 classes</p>
+    </div>
+
+    <div id="yay_java" class="step list" data-x="4800" data-y="500" data-rotate-z="0">
+      <p>...learnt Java</p> 
+      <div class="subheading">(Yay! no more <pre class="sh_javascript">htonls()</pre> or linker failures or memory management)</div>
+    </div>
+
+    <div id="1dev_wants" class="step lstep" data-x="4000" data-y="700" data-scale=".1">
+		  <span> So that's what I want from my language:</span>
+		  <ul>
+			  <li>...Simpler to use than the current one I'm used to</li>
+			  <li>...A good library</li>
+        <li>... ie, <strong>personal preferences</strong> rule. (job market demand is a <em>second</em>)</li>
+		  </ul>
+    </div>
+
+    <div id="1dev_overview" class="step" data-x="4000" data-y="700">
+    </div>
+
+    <div id="you" class="step" data-x="4000" data-y="1000" data-scale="3">
+      <p>~ 100 devs</p>
+      <span class="smallquote"> (you) </span>
+    </div>
+
+    <div id="current_lang" class="step lstep" data-x="5000" data-y="900">
+      <p>What's your main language now?</p>
+	  <ul>
+      <li> C/C++ /<img src="img/java.png" width="5%" height="5%"/>/<img src="img/csharp.png" width="10%" height="10%"/></li>
+  		<li><img src="img/ruby.png" width="4%" height="4%"/> / <img src="img/jruby.png" width="8%" height="8%"/> / <img src="img/python.gif" width="10%" height="10%"/> / <img src="img/php.gif" width="5%" height="5%"/></li>
+  		<li>...$your_lang_here...</li>
+	  </ul>
+    </div>
+
+    <div id="next_lang" class="step" data-x="5000" data-y="1200">
+      <p>What language are you likely to pick up next?</p>
+	  <ul>
+  		<li><img src="img/ruby.png" width="4%" height="4%"/> / <img src="img/jruby.png" width="8%" height="8%"/> / <img src="img/python.gif" width="10%" height="10%"/> / <img src="img/php.gif" width="5%" height="5%"/></li>
+  		<li><img src="img/clojure.gif" width="4%" height="4%"/> / <img src="img/erlang.png" width="4%" height="4%"/> / <img src="img/haskell.png" width="4%" height="4%"/></li>
+  		<li> <img src="img/scala.png" width="8%" height="8%"/> / <img src="img/fantom.png" width="8%" height="8%"/>  /Frink/Io/  <img src="img/ioke.png" width="5%" height="4%"/> / <img src="img/factor.png" width="8%" height="8%"/></li>
+  		<li>...$your_lang_here...</li>
+	  </ul>
+    <p>.. and why?</p>
+    </div>
+
+    <div id="100dev_wants" class="step lstep" data-x="4000" data-y="1200" data-scale=".1">
+		  <span> So in a small enough group you can still afford:</span>
+      <ul>
+        <li>... some selection bias </li>
+        <li>... ignoring what the job market demands</li>
+        <li>... if you're a startup, you could even use this to <a href="http://www.paulgraham.com/avg.html">beat the averages</a></li>
+      </ul>    
+    </div>
+
+    <div id="100dev_overview" class="step" data-x="4000" data-y="1000">
+    </div>
+
+    <div id="all" class="step" data-x="4000" data-y="1800" data-scale="3">
+      <p>&#8734; devs</p>
+      <div class="subheading"> (everyone) </div>
+      <div class="subheading"> (yes, even that guy <br/>who "codes OO" in JSP) </div>
+    </div>
+
+    <div id="yegge_nbl" class="step" data-x="5000" data-y="1800">
+      <p>The Steve Yegge List</p>
+	  <div class="subheading">(circa 2005)</div>
+      <ul>
+        <li>C-like syntax</li>
+        <li>Dynamic Typing with optional static types</li>
+        <li>Performance</li>
+        <li>Tools</li>
+        <li>Kitchen Sink</li>
+      </ul>
+    </div>
+
+	<div id="kitchen_sink" class="step" data-x="5000" data-y="2000" data-scale=".5">
+		<ul>
+			<li>Object literal syntax for arrays and hashes			</li>
+			<li>Array slicing and other collection operations		</li>
+			<li>PCRE literals										</li>
+			<li>Destructuring bind ie x,y=getTwoValues()			</li>
+			<li>Function literals and first class closures			</li>
+			<li>Standard OOP										</li>
+			<li>public/private/protected							</li>
+			<li>Iterators and generators							</li>
+			<li>List comprehensions									</li>
+			<li>Namespaces and packages								</li>
+			<li>Cross Platform GUI									</li>
+			<li>Operator overloading								</li>
+			<li>Keywords and rest parameters						</li>
+			<li>First class parser and AST support					</li>
+			<li>static typing and duck typing						</li>
+			<li>Type expressions and statically checkable semantics	</li>
+			<li>solid string and collections libraries				</li>
+			<li>Strings and streams act like collections			</li>
+		</ul>
+	</div>
+
+	<div id="lang_next_list" class="step" data-x="4500" data-y="2500">
+		<p> A refreshed list would be something like:</p>
+		<ul>
+			<li>Popular; maybe some hype too :)</li>
+			<li>Nice, ie OO-ish, but with some functional bits</li>
+			<li>Scalable</li>
+			<li>Nice Tools</li>
+			<li>Great Ecosystem</li>
+		</ul>
+	</div>
+
+	<div id="why_history" class="step" data-x="3500" data-y="2500">
+		<div class="subheading">... and we're going through JS's historical rollercoaster to see why it has <strong>all</strong> this!</div>
+		Here we go!
+	</div>
+
+	<div id="yr1995" class="step hist" data-x="-2500" data-y="-2500" data-rotate="-90" data-scale="2">
+		<p>1995</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+						<div class="lline">Brendan Eich creates Mocha aka Livescript @ Netscape</div>
+						<div class="lline">Interestingly, this is both client <strong>and</strong> server side JS (Netscape Enterprise Server)</div>
+						<div class="lline">Its renamed Javascript to cash in on Java's hype</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline">Tools</div>
+						<div class="lline">Ecosystem</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div id="browser_wars" class="step" data-x="-1866" data-y="-2000" data-rotate="-90" data-scale="2">
+		<p>The Great Browser Wars of early 20th Century</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+      		<div class="subheading">Javascript, JScript, Ecmascript: Pick any three!</div>
+      		<div class="subheading">Rhino is quitely made open source and ignored for the most part</div>
+		      <pre class="sh_javascript">
+              &lt;input type="button" name="test" value="Click me" onclick="submitForm()"&gt;
+		      </pre>
+					</div>
+					<div class="col2">
+						<div class="lline no">Popular</div>
+						<div class="lline no">OO+&lambda;</div>
+						<div class="lline no">Scalable</div>
+						<div class="lline">Tools</div>
+						<div class="lline">Ecosystem</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div id="yr2000" class="step" data-x="-1200" data-y="-1634" data-rotate="-90" data-scale="2">
+		<p>2000</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="subheading">Microsoft invents <strong>XMLHttpRequest as part of Outlook Web Access</strong></div>
+            <div class="subheading">Yes, <strong>the</strong> Microsoft</div>
+            <div class="subheading">Thus is born the <strong>first Web 2.0 app. Before</strong> they coined the term</div>
+            <div class="subheading">The rest of the world was blissfully refusing to do anthing interactive on the web</div>
+            
+					</div>
+					<div class="col2">
+						<div class="lline ">Popular</div>
+						<div class="lline ">OO+&lambda;</div>
+						<div class="lline ">Scalable</div>
+						<div class="lline yes">Tools</div>
+						<div class="lline">Ecosystem</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div id="unobtrusive_js" class="step" data-x="-500" data-y="-1500" data-rotate="-90" data-scale="2">
+		<p>~2002</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="subheading"><strong>Unobtrusive Javascript</strong> finally makes it to the world. Event handlers are now written thus:</div>
+            <pre class="sh_javascript">
+              &lt;input type="button" name="test" value="Click me" id="button_23"&gt;              
+              
+              &lt;script&gt;
+              $(function() {
+                $('#button_23').click(validateDate);
+              });
+              &lt;/script&gt;
+            </pre>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline yes">Tools</div>
+						<div class="lline ">Ecosystem</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div id="web20explodes" class="step" data-x="400" data-y="-1634" data-rotate="-90" data-scale="2">
+		<p>2005</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="subheading">Google maps launches and promptly <strong>knocks everyone's socks off</strong></div>
+            <div class="subheading">Yes, Javascript is sexy again</div>
+            <div class="subheading">Prototype.js is launched</div>
+            <div class="subheading">Ajax the term is also coined in the same year</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div id="early_ecosystem" class="step" data-x="1066" data-y="-2000" data-rotate="-90" data-scale="2">
+		<p>2006-2008: Etherpad & Appjet</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="subheading">Arguably the <strong>first Javascript hosted platform and collaborative editor</strong></div>
+            <div class="subheading">Joe Hewitt released Firebug - the first usable Browser debugger</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline yes">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div id="early_ecosystem_deepdive" class="step" data-x="566" data-y="-2000" data-z="-8000" data-rotate="-90" data-scale=".25">
+		<p>2006: Etherpad & Appjet</p>
+    <pre class="sh_javascript">
+import("storage");
+
+var historySize = 20;
+
+if (! storage.msgs) {
+  // ... do something
+}
+
+if (request.isPost) {
+  // .. handle request
+    response.redirect("/");
+} else {
+    print(FORM({id:"shoutform",action:"/", method:"post"},
+          INPUT({type:"text", name:"newText", size:40}),
+          INPUT({type:"submit", value:"shout!"})));
+    var messageDiv = DIV({id:"msgs"});
+    for(var i=storage.end-1; i >= storage.start; i--) {
+        messageDiv.push(P(storage.msgs[i]));
+    }
+    print(messageDiv);
+}
+
+/* appjet:css */
+
+#shoutform { margin: 10px; }
+#msgs { height: 200px; overflow: auto; border: 1px solid #666; 
+  margin: 10px; padding-left: 10px; }
+#msgs p { margin-top: 0.6em; margin-bottom: 0.6em; }
+body { margin: 8px; padding: 0; margin-top: 6px; }
+    </pre>
+	</div>
+
+	<div id="early_ecosystem_back" class="step" data-x="1066" data-y="-2000" data-rotate="-90" data-scale="2">
   </div>
+	<div id="atwoods_law" class="step" data-x="1066" data-y="-4000" data-rotate="-90" data-scale="2">
+    <p>2007</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="subheading"><strong>Jeff Atwood</strong> claims that "<q>Anything that <em>can</em> be  written in Javascript <em>will</em> eventually be written in Javascript"</q></div>
+            <div class="subheading">In a mad scramble to prove him right, people create tons of stuff on github</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline yes">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>	
+  </div>
+	<div id="crockford_era" class="step" data-x="2000" data-y="-4000" data-rotate="-90" data-scale="2">
+    <p>2008</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="subheading"><strong>Doug Crockford</strong> brings down the Tablets. </div>
+            <img src="img/js_good_parts.png"/>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>	
+    </div>
+
+	<div id="duck_season_wabbit_season" class="step" data-x="3000" data-y="-4000" data-rotate="-90" data-scale="2">
+    <p>2008+: Let the games begin!</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="lline"><strong>Web UI:</strong> Widget Libraries, Core F/Ws, MVC Frameworks </div>
+            <div class="lline"><strong>Analytics and Viz: </strong> Google Charts, d3.js, theJit.org, et al</div>
+            <div class="lline"><strong>Server Side: </strong> Haxe, Narwhal, CommonJS et al</div>
+            <div class="lline"><strong>$your_category: </strong> $your_list_of_implementations </div>
+            <div class="lline"><strong>OS:</strong> JSLinux</div>
+            <div class="lline">Now all they need is a presentation tool :)</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline">Scalable</div>
+						<div class="lline yes">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>		
+  </div>
+	<div id="performance" class="step" data-x="3600" data-y="-3066" data-rotate="-90" data-scale="2">
+    <p>2010: The big guns are brung!</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="lline"><strong>V8</strong> packs enough punch to run whole apps in-browser</div>
+            <div class="lline">HTML5 pushes WebM, WebGL and a whole slew of tools into the browser</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline yes">Scalable</div>
+						<div class="lline yes">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div id="enter_coffeescript" class="step" data-x="4200" data-y="-3000" data-rotate="-90" data-scale="2">
+    <p>May you speak in silvered tongues</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="lline"><img src="img/coffeescript.png"> gives rubyists an excuse to work in the browser</div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline ">Scalable</div>
+						<div class="lline ">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div id="cs_deepdive" class="step" data-x="4000" data-y="-3000" data-z="-8000" data-rotate="-90" data-scale="2">
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <pre  style="font-size:10px" class="sh_javascript"># Assignment:
+number   = 42
+opposite = true
+
+# Conditions:
+number = -42 if opposite
+
+# Functions:
+square = (x) -> x * x
+
+# Arrays:
+list = [1, 2, 3, 4, 5]
+
+# Objects:
+math =
+  root:   Math.sqrt
+  square: square
+  cube:   (x) -> x * square x
+
+# Splats:
+race = (winner, runners...) ->
+  print winner, runners
+
+# Existence:
+alert "I knew it!" if elvis?
+
+# Array comprehensions:
+cubes = (math.cube num for num in list)</pre>
+					</div>
+					<div class="col2">
+            <pre style="font-size:10px" class="sh_javascript">var cubes, list, math, num, number, opposite, race, square,
+  __slice = Array.prototype.slice;
+
+number = 42;
+
+opposite = true;
+
+if (opposite) number = -42;
+
+square = function(x) {
+  return x * x;
+};
+
+list = [1, 2, 3, 4, 5];
+
+math = {
+  root: Math.sqrt,
+  square: square,
+  cube: function(x) {
+    return x * square(x);
+  }
+};
+
+race = function() {
+  var runners, winner;
+  winner = arguments[0], runners = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+  return print(winner, runners);
+};
+
+if (typeof elvis !== "undefined" && elvis !== null) alert("I knew it!");
+
+cubes = (function() {
+  var _i, _len, _results;
+  _results = [];
+  for (_i = 0, _len = list.length; _i < _len; _i++) {
+    num = list[_i];
+    _results.push(math.cube(num));
+  }
+  return _results;
+})();</pre>
+					</div>
+				</div>
+			</div>		
+	  </div>
+	<div id="coffeescript_back" class="step" data-x="4200" data-y="-3000" data-rotate="-90" data-scale="2">
+  </div>
+
+	<div id="nodejs" class="step" data-x="5000" data-y="-1500" data-rotate="-90" data-scale="2">
+      <p>Threads? We dont need no stinkin' threads!</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="lline"><img src="img/nodejs.png"> lets you scale at the price of turning your brain into sphagetti with its callback nesting</div>
+            <div class="lline"> ... but rest assured our men are working on that problem :) </div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline yes">Scalable</div>
+						<div class="lline ">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>	
+  </div>
+
+	<div id="nodejs" class="step" data-x="5000" data-y="-1500" data-z="-8000" data-rotate="-90" data-scale="0.25">
+    <p>If you've been under a rock the past few years...</p>
+    <pre class="sh_javascript">
+var http = require('http');
+  http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, "127.0.0.1");
+console.log('Server running at http://127.0.0.1:1337/');
+    </pre>
+  </div>
+
+	<div id="nodejs" class="step" data-x="5000" data-y="-1500" data-z="-12000" data-rotate="-90" data-scale=".25">
+    <p>One more thing...</p>
+    <img src="img/nide.png"/>
+  </div>
+
+	<div id="nodejs_w_tools" class="step" data-x="5000" data-y="-1500" data-rotate="-90" data-scale="2">
+      <p>Threads? We dont need no stinkin' threads!</p>
+			<div class="table">
+				<div class="row">
+					<div col="col1">
+            <div class="lline"><img src="img/nodejs.png"> lets you scale at the price of turning your brain into sphagetti with its callback nesting</div>
+            <div class="lline"> ... but rest assured our men are working on that problem :) </div>
+					</div>
+					<div class="col2">
+						<div class="lline yes">Popular</div>
+						<div class="lline yes">OO+&lambda;</div>
+						<div class="lline yes">Scalable</div>
+						<div class="lline yes" style="text-decoration:bold">Tools</div>
+						<div class="lline yes">Ecosystem</div>
+					</div>
+				</div>
+			</div>	
+  </div>
+
+
+	<div id="not_bad_eh" class="step" data-x="6300" data-y="-1000" data-rotate="-90" data-scale="2">
+		<p>Not bad for a no-beard language, eh?</p>
+    <img src="img/js_no_beard.png"/>
+	</div>
+
+
+	<div id="thankyou" class="step" data-x="6000" data-y="0" data-z="8000" data-rotate="-90">
+		<p style="text-align:center">Thank You!</p>
+    </div>
+
+	<div id="any_qs" class="step" data-x="6000" data-y="0" data-z="15000" data-rotate="-90">
+		<p style="text-align:center">Any Questions?</p>
+    </div>
+
+	<div id="wait_for_it" class="step" data-x="6000" data-y="0" data-z="30000" data-rotate="-90">
+    </div>
+
+	<div id="vinod_coords" class="step" data-x="8000" data-y="0" data-z="40000" data-rotate="-90">
+		<div id="easel">
+			<canvas id="canvas"></canvas>
+		</div>
+		<div class="subheading">@vinod_dinakaran </div>
+		<div class="subheading">+vinod.dinakaran </div>
+		<div class="subheading">tt2n.blogspot.com </div>
+  </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+	function drawJ(ctx){
+    ctx.fillStyle = "rgba(0, 0, 200, .5)";
+		ctx.beginPath();
+	  ctx.moveTo(140, 15);  
+		ctx.lineTo(140, 90);
+		ctx.bezierCurveTo(130,115,70,100,70,95);
+		ctx.lineTo(80,83);
+		ctx.bezierCurveTo(90,90,105,90,110,85);
+		ctx.lineTo(110,15);
+	    ctx.closePath();  
+		ctx.fill();
+	}
+
+	function drawS(ctx){
+    ctx.fillStyle = "rgba(0, 0, 200, .5)";
+		ctx.beginPath();
+	  ctx.moveTo(190,15);
+    ctx.lineTo(190, 22.5);
+    ctx.bezierCurveTo(160,30,160,40,190,52.5);
+    ctx.bezierCurveTo(230,60,230,90,190,100);
+		ctx.lineTo(155,100);
+		ctx.lineTo(155,90);
+		ctx.lineTo(175,90);
+    ctx.bezierCurveTo(210,85,210,70,175,60);
+    ctx.bezierCurveTo(135,40,135,25,175,15);
+	  ctx.closePath();  
+		ctx.fill();
+	}
+
+	function draw() {  
+      var canvas = document.getElementById("canvas");  
+      if (canvas.getContext) {  
+        var ctx = canvas.getContext("2d");  
+		drawJ(ctx);
+    drawS(ctx);
+      }  
+    }
+
+  function doInit(){
+    sh_highlightDocument();
+    draw();
+  }
+</script>
+<script src="impress.js"></script>
 
 </body>
 </html>
+
