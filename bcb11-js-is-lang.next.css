@@ -130,7 +130,7 @@ li {
 }
 
 .step:not(.active) {
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 /* hint on the first slide */
@@ -203,6 +203,7 @@ pre, .lline {
 
 .yes{
 	color:green;
+  text-decoration:bold;
 }
 
 .no{
