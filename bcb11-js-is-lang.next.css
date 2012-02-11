@@ -257,6 +257,11 @@ pre, .lline {
   width: 1000px;
 }
 
+#early_ecosystem_deepdive > .sh_javascript{
+  font-size:15px;
+}
+
+
 #easel {
 	position: absolute;
 	width: 1200px;
